@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 25px;
+  font-size: 10px;
+}
+
+header {
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.dt-year-weight {
+  font-weight: 800;
+}
+
+.dt-year-color {
+  color: cornflowerblue;
+}
