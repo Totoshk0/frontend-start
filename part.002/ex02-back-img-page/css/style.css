@@ -1,26 +1,114 @@
 /* изображения с сайта https://beloweb.name/dizayn-sayta/30-krutyih-i-besplatnyih-patternov-ot-populyarnyih-dizaynerov.html */
 
 body {
-  color: #474747;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+
+  /* устанавливается размер шрифта текста внутри <body>.
+    В данном случае, размер 20 пикселей. */
   font-size: 20px;
+
+  /* устанавливается высота строки (расстояние между строками текста) внутри элемента <body>.
+    1.4 - значит, что высота строки будет 1.4 раза больше размера шрифта. */
   line-height: 1.4;
+
+  /* устанавливается цвет текста внутри */
+  color: #474747;
+
+  /* устанавливается цвет фона элемента */
   background-color: #d7d7d7;
+
+
+  background-image: url("./../pic/bicycles.png");
+  background-size: 500px 500px;
 }
 
+/* изображения с сайта https://beloweb.name/dizayn-sayta/30-krutyih-i-besplatnyih-patternov-ot-populyarnyih-dizaynerov.html */
 .card {
   width: 600px;
   height: auto;
+  /* установка внутренних отступов
+    15 пикселей сверху и снизу,
+    25 пикселей слева и справа. */
+  padding: 15px 25px;
 
-  border: black solid 2px;
-  /* border-color: black;
-  border-style: solid;*/
-  /* border-width: 1px; */
-
-  /* margin: 0 auto; */
-  margin-top: 0;
-  margin-bottom: 0;
+  /* Автоматическое выравнивание элемента по левому
+    краю относительно его родительского контейнера.*/
   margin-left: auto;
+
+  /* Автоматическое выравнивание элемента по правому
+    краю относительно его родительского контейнера.
+    Это вместе с margin-left: auto;
+    делает элемент центрированным по горизонтали. */
   margin-right: auto;
 
+  /* border: 2px solid #ddd; */
+  border-color: #e1e1e1;
+  border-style: solid;
+  border-width: 2px;
+
+  /* установка белого цвета фона. */
+  background-color: #fff;
+
+  /* задание изображения в качестве фонового рисунка  */
+  background-image: url("./../pic/design-tools.jpg");
+
+  /* отключение повторения фонового изображения. */
+  background-repeat: no-repeat;
+
+  /* масштабирование фонового изображения так,
+    чтобы оно покрывало весь доступный фон. */
+  background-size: cover;
+
+  /* установка позиции фонового изображения в центре контейнера. */
+  background-position: center;
+}
+
+
+.card-title {
+  /* установка верхнего отступа элемента в 0,
+    что убирает верхний отступ. */
+  margin-top: 0;
+
+  /* установка нижнего отступа элемента в 20 пикселей. */
+  margin-bottom: 20px;
+
+  color: #c1c1c1;
+}
+
+.card-text {
+  color: #f1f1f1;
+}
+
+.card-text p {
+  /* margin: 0 0 15px 0; */
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+.footer {
+  width: 600px;
+  height: auto;
+  /* установка внутренних отступов
+      15 пикселей сверху и снизу,
+      25 пикселей слева и справа. */
+  padding: 15px 25px;
+
+  /* Автоматическое выравнивание элемента по левому
+      краю относительно его родительского контейнера.*/
+  margin-left: auto;
+
+  /* Автоматическое выравнивание элемента по правому
+      краю относительно его родительского контейнера.
+      Это вместе с margin-left: auto;
+      делает элемент центрированным по горизонтали. */
+  margin-right: auto;
+  /* Выравнивание текста по правому краю */
+  text-align: right;
+
+  /* курсивный стиля */
+  font-style: italic;
+
+  color: white;
 }
