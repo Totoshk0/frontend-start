@@ -6,7 +6,7 @@ body {
 
 .box {
   width: 500px;
-  font-size: 25px;
+  font-size: 35px;
   margin: 20px auto;
   margin: 0px auto;
   background-color: #868686;
@@ -21,18 +21,19 @@ body {
 a {
   display: inline-block;
   width: 200px;
-  height: 50px;
-  line-height: 50px;
+  /* height: 50px;
+  line-height: 50px; */
   vertical-align: middle;
   text-align: center;
   font-weight: 400;
   white-space: nowrap;
   border: 1px solid transparent;
-  padding: 10px 12px;
+  padding: 0.6em 12px;
   border-radius: 10px;
 }
 
 .btn-primary {
+  font-size: 40px;
   color: white;
   background-color: #007bff;
   border-color: #007bff;
