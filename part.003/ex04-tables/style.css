@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #a9a9a9;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.contact-list {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: separate;
+}
+
+.contact-list th {
+  padding: 20px;
+  text-align: center;
+  color: #9c4a4a;
+}
+
+.contact-list td {
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-list tfoot td {
+  text-align: right;
+}
