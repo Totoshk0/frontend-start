@@ -36,3 +36,8 @@ p {
   /* цвет границы */
   column-rule-color: black;
 }
+
+.columns-2 h2 {
+  column-span: all;
+  text-align: center;
+}
