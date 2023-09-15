@@ -45,14 +45,14 @@ a {
 }
 
 .btn-primary:hover {
-  font-size: 30px;
+  font-size: 1.1em;
   color: white;
   background-color: #0091eb;
   border-color: #0091eb;
 }
 
 .btn-secondary:hover {
-  font-size: 30px;
+  font-size: 1.1em;
   color: white;
   background-color: #88929a;
   border-color: #88929a;
