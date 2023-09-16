@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <div class="form">
+    <h1 class="title">Формы</h1>
+
+    <form action="/" method="post">
+      <fieldset>
+        <legend>Информация</legend>
+
+        <div class="group-style">
+          <label for="full_name_field">ФИО</label>
+          <input class="input-form" type="text" name="name" id="full_name_field">
+        </div>
+
+        <div class="group-style">
+          <input class="input-form" type="email" name="email" placeholder="E-mail">
+        </div>
+
+        <div class="group-style">
+          <input class="input-form" type="tel" name="tel" placeholder="Телефон">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Пароль</legend>
+        <div class="group-style">
+          <input class="input-form" type="password" name="password" placeholder="Pa$$w0rd!">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="group-style">
+          <label for="male">🙎🏼‍♀️</label>
+          <input type="radio" name="gender" id="male">
+
+          <label for="female">🙎🏼‍♂️</label>
+          <input type="radio" name="gender" id="female">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Заметка</legend>
+        <div class="group-style">
+          <textarea rows="3" name="text">
+1
+2
+3
+        </textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Город</legend>
+        <div class="group-style">
+          <select name="city">
+            <option>Смоленск</option>
+            <option>Плёс</option>
+            <option>Кострома</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Фотография</legend>
+        <div class="group-style">
+          <input type="file" name="photo" id="photo">
+        </div>
+      </fieldset>
+
+      <div class="group-style">
+        <input type="checkbox" name="rules" id="rules">
+        <label for="rules">Принимаю условия</label>
+      </div>
+
+      <button type="submit">Подтвердить</button>
+      <button type="reset">Отмена</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
