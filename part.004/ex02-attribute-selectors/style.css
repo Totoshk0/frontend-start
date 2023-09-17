@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 50px;
+  color: #333;
+  font: 28px/1.5 sans-serif;
+}
+
+a {
+  text-decoration-line: none;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  text-decoration-line: none;
+  font-size: 20px;
+  color: blue;
+}
+
+.date-time {
+  color: red;
+}
+
+.time {
+  color: blue;
+}
+
+section[section-style] {
+  background: wheat;
+}
+
+div[number="text-row-1"] {
+  background-color: aqua;
+}
+
+div[number="text-row-2"] {
+  background-color: blue
+}
+
+.custom-selector {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+div[custom-selector-div^="figure"] {
+  color: darkblue;
+}

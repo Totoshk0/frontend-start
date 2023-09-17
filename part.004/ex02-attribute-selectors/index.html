@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Attribute selectors</title>
+</head>
+
+<body>
+
+  <section section-style>
+    <div number="text-row-1">1</div>
+    <div class="date-time">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+
+    <div number="text-row-2">2</div>
+    <div class="time">
+      <script>
+        document.write(new Date().toLocaleTimeString());
+      </script>
+    </div>
+
+  </section>
+
+  <div class="custom-selector">
+    <div custom-selector-div="figure-circle">color</div>
+    <div custom-selector-div="figure-square">rectangle</div>
+    <div custom-selector-div="figure-rectangle">square</div>
+  </div>
+
+  <div>
+    <a href=" ">
+      #
+    </a>
+  </div>
+
+</body>
+
+</html>
