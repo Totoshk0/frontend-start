@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #a9a9a9;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.contact-list {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: separate;
+}
+
+.contact-list th {
+  padding: 10px;
+  text-align: center;
+  color: #9c4a4a;
+}
+
+.contact-list td {
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-list tfoot td {
+  text-align: right;
+}
+
+.contact-list tr[tr-color]:nth-child(2n+1) {
+  background-color: gray;
+}
+
+.contact-list td[row-index]:first-child {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 15px;
+}

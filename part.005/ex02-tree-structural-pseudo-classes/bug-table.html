@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bug-table.css">
+  <title>Tables</title>
+</head>
+
+<body>
+
+  <h1>Список контактов</h1>
+
+  <table class="contact-list" border="1">
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>ФИО</th>
+        <th>Телефон</th>
+        <th>Заметки</th>
+      </tr>
+    </thead>
+    <tbody>
+      <script>
+        const count = Math.floor(Math.random() * 5) + 5;
+        for (let i = 1; i <= count; i++) {
+          document.write(
+            `
+          <tr tr-color>
+            <td>${i}</td>
+            <td>Имя ${i} Фамилия ${i}</td>
+            <td>+7 123 456-87-${i * 10 + 1}</td>
+            <td>Заметка ${i}</td>
+          </tr>
+            `);
+        }
+      </script>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Всего:
+          <script>
+            document.write(count);
+          </script>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+
+</html>
