@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 50px;
+  color: #333;
+  font: 28px/1.5 sans-serif;
+}
+
+a {
+  text-decoration-line: none;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  text-decoration-line: none;
+  font-size: 20px;
+  color: blue;
+}
+
+.date-time {
+  color: red;
+}
+
+.time {
+  color: blue;
+}
+
+.date-time+.time {
+  color: orange;
+}
+
+.time+.date-time {
+  color: black;
+}
+
+/* .time+.date-time+.date-time {
+  color: yellow;
+} */

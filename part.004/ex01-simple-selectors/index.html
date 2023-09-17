@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Selectors</title>
+</head>
+
+<body>
+
+  <h5>Это смежные (соседние) селекторы</h5>
+
+  <section>
+    <div>1</div>
+    <div class="date-time">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+
+    <div class="time">
+      <script>
+        document.write(new Date().toLocaleTimeString());
+      </script>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div>2</div>
+    <div class="date-time">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div>3</div>
+    <div class="time">
+      <script>
+        document.write(new Date().toLocaleTimeString());
+      </script>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div>4</div>
+    <div class="time">
+      <script>
+        document.write(new Date().toLocaleTimeString());
+      </script>
+    </div>
+
+    <div class="date-time">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+
+    <div class="date-time">
+      <script>
+        document.write(new Date().toLocaleString());
+      </script>
+    </div>
+  </section>
+
+  <hr>
+
+  <div>
+    <a href="./sibling-selector.html">
+      К родственным селекторам
+    </a>
+  </div>
+
+</body>
+
+</html>
