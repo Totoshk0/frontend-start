@@ -1,0 +1,57 @@
+body {
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 30px
+}
+
+a {
+  display: block;
+  margin: 10px;
+}
+
+.buy:hover {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.p-discount {
+  color: #ff000000
+}
+
+.not-buy:hover+.p-discount {
+  text-decoration: none;
+  color: #ff0000ff;
+}
+
+.custom-style {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #333;
+  text-decoration: none;
+}
+
+.link-hover:hover {
+  color: #2196f3;
+}
+
+.link-active:active {
+  color: #f44336;
+}
+
+.link-visited:visited {
+  color: darkblue;
+}
+
+.tab-focus:focus {
+  color: #4caf50;
+}
+
+.hover-square:hover {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  border: 2px solid black;
+  background: #ccc;
+}
