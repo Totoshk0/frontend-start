@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign up</title>
+</head>
+
+<body>
+  <form class="form" action="/" method="post">
+    <h2 class="label-title">Личные данные</h2>
+    <div class="item-group">
+      <input class="text-box" type="text" placeholder="Имя">
+    </div>
+
+    <div class="item-group">
+      <input class="text-box" type="email" placeholder="E-mail">
+    </div>
+
+    <div>
+      <div class="item-group">
+        <label for="male">🕺🏼</label>
+        <input type="radio" name="choose_male" id="male">
+
+        <label for="female">💃🏼</label>
+        <input type="radio" name="choose_male" id="female">
+      </div>
+
+      <div class="item-group">
+        <input class="text-box" type="password" placeholder="Пароль">
+      </div>
+
+      <div class="item-group">
+        <select class="combo-box">
+          <option>Дополнительная защита</option>
+          <option>Секретный вопрос</option>
+          <option>Дополнительный e-mail</option>
+        </select>
+      </div>
+      <div class="item-group">
+        <input class="text-box" type="text" placeholder="Ответ">
+      </div>
+    </div>
+
+    <div class="group-box">
+      <h2 class="label-title">Уведомления</h2>
+
+      <div class="group-box">
+        <input type="checkbox" id="notify_email">
+        <label for="notify_email">Новости и акции</label>
+      </div>
+
+      <div class="group-box">
+        <input type="checkbox" id="privacy">
+        <label for="privacy">Конфиденциальность <a href="#">ознакомиться</a></label>
+      </div>
+    </div>
+
+    <button class="submit-btn" type="submit">Подтвердить</button>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+body {
+  background-color: #eee;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  color: #0f0f0f;
+}
+
+.form {
+  margin: 20px auto;
+  width: 298px;
+  padding: 15px;
+  border: 1px solid #bababa;
+  background-color: #fff;
+}
+
+.label-title {
+  color: #643ad6;
+  font-size: 25px;
+  margin: 0 0 15px;
+  width: 300px;
+
+}
+
+.group-box {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.item-group {
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.text-box {
+  width: 278px;
+  padding: 15px 10px;
+  background-color: #fff;
+  border: 1px solid #bababa;
+  color: #0f0f0f;
+  font-size: 15px;
+}
+
+
+.combo-box {
+  width: 300px;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #1b521b;
+  padding: 10px 15px;
+  color: #fff;
+  border: 0;
+}
