@@ -1,0 +1,60 @@
+h1::before {
+  /* Круглый буллет */
+  content: "\2022 ";
+}
+
+p::first-letter {
+  font-size: 150%;
+  color: red;
+}
+
+a::after {
+  /* Символ стрелки вправо */
+  content: "\2192";
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+/* ::selection {
+  content: "";
+} */
+
+.transparent-text {
+  color: #00000000;
+}
+
+.selection-style p::selection {
+  background-color: yellow;
+  color: #000000ff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Полупрозрачное черное затемнение */
+  z-index: 1;
+  /* Помещаем его поверх всего остального */
+}
+
+/* Отображение модального окна при нажатии кнопки */
+.show-modal {
+  display: block;
+}
