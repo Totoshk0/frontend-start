@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.content {
+  margin: 20px auto;
+  width: 500px;
+}
+
+/* 1. Анимация изменения цвета текста при наведении */
+.text-animation {
+  color: blue;
+  transition: color 1.5s ease-in-out;
+}
+
+.text-animation:hover {
+  color: red;
+}
+
+/* 2. Анимация изменения размера элемента при нажатии */
+.box-animation {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.box-animation:active {
+  width: 150px;
+  height: 150px;
+}
+
+/* 3. Анимация вращения элемента бесконечно */
+.rotate-animation {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 4. Анимация появления и исчезновения элемента */
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-out:hover {
+  opacity: 1;
+}
+
+/* 5. Анимация движения элемента влево-вправо */
+.move-animation {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  animation: move 2s linear infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 400px;
+  }
+}
