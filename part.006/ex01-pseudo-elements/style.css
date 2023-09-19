@@ -1,0 +1,62 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #d7d7d7;
+}
+
+.pseudo-title {
+  text-align: center;
+}
+
+.pseudo-title::before {
+  content: "● ";
+  color: blue;
+  ;
+}
+
+.pseudo-title::after {
+  content: ".";
+}
+
+.header-h2 {
+  height: 3em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2::after {
+  content: "";
+  margin: -1.6em auto;
+  border-top: solid red;
+  border-bottom: solid red;
+  width: 6em;
+  height: 2em;
+  display: block;
+}
+
+.card {
+  height: auto;
+}
+
+.card-content p {
+  color: black;
+}
+
+.card-content p::first-letter {
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.card-title {
+  height: 2.5em;
+}
+
+.card-content::first-line {
+
+  margin: 100px;
+  color: red;
+}
