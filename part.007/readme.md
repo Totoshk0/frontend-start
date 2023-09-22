@@ -7,10 +7,6 @@ gradients
 2) Плавный переход между двумя или более цветами.
 3) Метод изменения размера шрифта в CSS.
 </pre>
-<details>
-  <summary></summary>
-      <pre>Плавный переход между двумя или более цветами.</pre>
-</details>
 </details>
 
 <hr>
@@ -23,10 +19,6 @@ gradients
 2) gradient
 3) background
 </pre>
-<details>
-  <summary></summary>
-      <pre>background</pre>
-</details>
 </details>
 
 <hr>
@@ -39,10 +31,6 @@ gradients
 2) background: linear-gradient(to top, red, blue);
 3) background: linear-gradient(to bottom, red, blue);
 </pre>
-<details>
-  <summary></summary>
-      <pre>background: linear-gradient(to bottom, red, blue);</pre>
-</details>
 </details>
 
 <hr>
@@ -55,10 +43,6 @@ gradients
 2) Место, где происходит плавный переход от одного цвета к другому в градиенте.
 3) Свойство, которое указывает цвет элемента.
 </pre>
-<details>
-  <summary></summary>
-      <pre>Место, где происходит плавный переход от одного цвета к другому в градиенте.</pre>
-</details>
 </details>
 
 <hr>
@@ -71,10 +55,6 @@ gradients
 2) Используя repeating-linear-gradient.
 3) Путем добавления множества <div> элементов.
 </pre>
-<details>
-  <summary></summary>
-      <pre>Используя repeating-linear-gradient.</pre>
-</details>
 </details>
 
 <hr>
