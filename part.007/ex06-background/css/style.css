@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #474747;
+  background-color: #d7d7d7;
+  /* background-image: url("./../pic/bicycles.png"); */
+  background-color: #474747;
+  background-size: 100%;
+}
+
+.card {
+  width: 600px;
+  height: auto;
+  padding: 15px 25px;
+
+  margin: 20px auto;
+  /* border-color: #e1e1e1; */
+  /* border-style: solid; */
+  /* border-width: 2px; */
+  background-color: #838383;
+  background-image: url("./../pic/design-tools.png");
+  /* background-image: url("./../pic/1292349102.svg"); */
+  /* background-size: 500px 500px; */
+  /* background-size: 500px; */
+  /* background-size: 500px 400px; */
+  /* background-size: contain; */
+  /* background-size: cover; */
+  /* background-size: 650px 684px; */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* background-position: center; */
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #c1c1c1;
+}
+
+.card-text {
+  color: #f1f1f10f;
+}
+
+.card-text p {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+.footer {
+  width: 600px;
+  height: auto;
+  padding: 15px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  font-style: italic;
+  color: white;
+}
