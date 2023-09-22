@@ -1,0 +1,30 @@
+body {
+  background: #ccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+p {
+  padding: 15px;
+}
+
+.container {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.content {
+  width: 600px;
+}
+
+.rectangle {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  width: 180px;
+  height: 50px;
+  background-color: red;
+}
