@@ -12,8 +12,6 @@ body {
   margin: 0;
 
   /* BEGIN (write your solution here) */
-  background: repeating-linear-gradient(45deg,
-      var(--transparent), var(--transparent) 100px,
-      var(--purple) 100px, var(--purple) 200px)
-    /* END */
+
+  /* END */
 }
