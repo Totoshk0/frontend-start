@@ -1,0 +1,6 @@
+.container2 {
+  padding: 10px;
+  margin: var(--div-margin);
+  /* background-color: aquamarine; */
+  background-color: var(--container2-color, #d7d7d7)
+}

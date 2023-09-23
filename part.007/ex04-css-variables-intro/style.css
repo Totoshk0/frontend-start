@@ -5,14 +5,29 @@ body {
   line-height: 1.5;
 }
 
-.container1 {
-  padding: 10px;
+/* Описание глобальных переменных */
+:root {
+  --div-margin: 20px auto;
+  --div-width: 250px;
+  --container-color: red;
 }
 
-.container2 {
-  padding: 10px;
+.container {
+  width: var(--div-width);
 }
+
+.container1 {
+  /* Это локальная переменная  */
+  --container1-color: red;
+  padding: 10px;
+  margin: var(--div-margin);
+  background-color: aqua;
+  /* background-color: var(--container1-color) */
+}
+
 
 .container3 {
   padding: 10px;
+  margin: var(--div-margin);
+  background-color: blanchedalmond;
 }
