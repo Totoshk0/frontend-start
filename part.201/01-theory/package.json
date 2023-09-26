@@ -1,0 +1,13 @@
+{
+  "name": "part.201",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex14-calls.js",
+  "scripts": {
+    "start": "node ex14-calls.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

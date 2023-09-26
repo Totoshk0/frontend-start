@@ -16,3 +16,6 @@
     "javascript": "cd $dir && clear && echo '>>> $fileName:' &&  node $fileName",
   },
 ```
+
+### Escape-последовательность
+[Escape sequences](https://learn.microsoft.com/ru-ru/cpp/c-language/escape-sequences?view=msvc-170#escape-sequences-1)
