@@ -1,0 +1,12 @@
+{
+  "name": "part.204",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node ./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
