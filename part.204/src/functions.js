@@ -1,8 +1,5 @@
 const transformString = (text) => {
-  return text
-    .split('')
-    .map(x => `\0${x}\0` + '\0')
-    .join('');
+  throw new Error(text);
 }
 
 export { transformString };
