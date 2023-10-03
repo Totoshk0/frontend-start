@@ -1,3 +1,5 @@
+## Перед началом
+Познакомиться и добавить в закладки >> [learngitbranching](https://learngitbranching.js.org/?locale=ru_RU) <<
 ## Начало
 
 ### Установить
