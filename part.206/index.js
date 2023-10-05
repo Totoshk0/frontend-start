@@ -1,27 +1,19 @@
 const checkEvenOrOdd = (value) => {
-  const result = value % 2 === 0;
-  return result;
+  // BEGIN (write your solution here)
+
+  // END
 }
 
 const calculateAverageScore = (score1, score2, score3) => {
-  let average = (score1 + score2 + score3) / 3;
-  if (average >= 70) {
-    return true;
-  } else {
-    return false;
-  }
+  // BEGIN (write your solution here)
+
+  // END
 }
 
 const calculateStudentGrade = (score) => {
-  if (score >= 90 && score <= 100) {
-    return "Отлично";
-  } else if (score >= 75 && score < 90) {
-    return "Хорошо";
-  } else if (score >= 60 && score < 75) {
-    return "Удовлетворительно";
-  } else {
-    return "Неудовлетворительно";
-  }
+  // BEGIN (write your solution here)
+
+  // END
 }
 
 // Тестирование функции checkEvenOrOdd
