@@ -1,12 +1,12 @@
-const x = 4;
-const y = 10;
+const value1 = 20;
+const value2 = 100;
 
 let max;
 
-if (x > y) {
-  max = x;
+if (value1 > value2) {
+  max = value1;
 } else {
-  max = y;
+  max = value2;
 }
 
 console.log(max);
