@@ -48,3 +48,19 @@ if (a > b) {
 
 console.log(`>> max(${a}, ${b}): ${max}`);
 ```
+
+## Неполная форма условного оператора:
+![Неполная форма if-else](drawio/img02.drawio.png)
+
+```js
+const a = readInt('a: ');
+const b = readInt('b: ');
+
+let max = a;
+
+if (b > max) {
+  max = b;
+}
+
+console.log(`>> max(${a}, ${b}): ${max}`);
+```
