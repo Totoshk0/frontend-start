@@ -144,3 +144,93 @@ const getTimeOfYear = (month) => {
   return timeOfYear;
 }
 ```
+## Циклы
+Цикл — это многократное выполнение одинаковой последовательности действий.
+В JavaScript доступны циклы:
+- цикл while;
+- цикл do-while;
+- цикл for;
+
+## Задача.
+Собрать строку из заданного символа повторяющегося указанное количество раз
+
+## Цикл while
+Формат оператора:
+```js
+while (condition) {
+  operator;
+}
+```
+
+![](drawio/img51.drawio.png)
+
+```js
+const whileStringBuilder = (symbol, quantity) => {
+  let result = '';
+  let counter = 0;
+  const char = symbol.length === 1 ? symbol : symbol[0];
+
+  while (counter < quantity) {
+    result = result + char;
+    counter++;
+  }
+
+  return result;
+}
+```
+
+## Цикл do-while
+Формат оператора:
+```js
+do {
+  operator;
+} while (condition);
+
+```
+
+![](drawio/img52.drawio.png)
+
+```js
+const doWhileStringBuilder = (symbol, quantity) => {
+  let result = '';
+  let counter = 0;
+  const char = symbol.length === 1 ? symbol : symbol[0];
+
+  do {
+    result = result + char;
+    counter++;
+  } while (counter < quantity);
+
+  return result;
+}
+```
+
+## Цикл for
+Формат оператора:
+
+```js
+for (init; condition; change) {
+  operator;
+}
+```
+
+![](drawio/img53.drawio.png)
+
+```js
+const forStringBuilder = (symbol, quantity) => {
+  let result = '';
+  let counter = 0;
+  const char = symbol.length === 1 ? symbol : symbol[0];
+
+  for (let counter = 0; counter < quantity; counter++) {
+    result = result + char;
+  }
+
+  return result;
+}
+```
+### Замечания
+
+- можно использовать сложные условия;
+- если в теле цикла только один оператор, скобки { и } можно не писать;
+- тело цикла do-while всегда выполняется хотя бы один раз.
