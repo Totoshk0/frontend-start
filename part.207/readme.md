@@ -205,6 +205,24 @@ const doWhileStringBuilder = (symbol, quantity) => {
 }
 ```
 
+## while vs do-while
+
+```js
+while (not edge) {
+  run();
+}
+```
+
+```js
+do {
+  run();
+} while (not edge);
+```
+
+![](./img/IMG_0734.JPG)
+
+<hr>
+
 ## Цикл for
 Формат оператора:
 
