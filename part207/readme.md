@@ -64,3 +64,28 @@ if (b > max) {
 
 console.log(`>> max(${a}, ${b}): ${max}`);
 ```
+## Тернарная операция
+
+Тернарный оператор (`? :`) представляет собой условный оператор и часто используется вместо определённых видов конструкций `if-then-else`. Общая форма этого оператора:
+
+- `expression1 ? expression2 : expressionЗ;`
+В случае сохранения результата вычисления
+- `variable = expression1 ? expression2 : expressionЗ;`
+
+*Если `expression1` — истинно, то берётся `expression2`, иначе берётся `expression3`.*
+
+### Чётное или нечётное число.
+
+```js
+const maximumTwoNumbersTernaryOperator = (a, b) => {
+  let max = (a > b) ? a : b;
+  return max;
+}
+```
+
+```js
+const isEvenOrOdd = (value) => {
+  let result = value % 2 === 0 ? 'чётное число' : 'нечётное число';
+  return result;
+}
+```
