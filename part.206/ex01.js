@@ -51,39 +51,31 @@ const pointInCircle = (a, b, r, x, y) => {
 
 const getSeason = (month) => {
   const tempMonth = month.toLowerCase();
-  let result = '';
 
   switch (tempMonth) {
     case 'январь':
     case 'февраль':
     case 'декабрь':
-      result = 'Зима';
-      break;
+      return 'Зима';
 
     case 'март':
     case 'апрель':
     case 'май':
-      result = 'Весна';
-      break;
+      return 'Весна';
 
     case 'июнь':
     case 'июль':
     case 'август':
-      result = 'Лето';
-      break;
+      return 'Лето';
 
     case 'сентябрь':
     case 'октябрь':
     case 'ноябрь':
-      result = 'Осень';
-      break;
+      return 'Осень';
 
     default:
-      result = 'Такого месяца не существует';
-      break;
+      return 'Такого месяца не существует';
   }
-
-  return result;
 }
 
 console.log(getSeason('декабрь') === 'Зима');
@@ -103,4 +95,4 @@ console.log(getSeason('август') === 'Лето');
 console.log(getSeason('сентябрь') === 'Осень');
 console.log(getSeason('октябрь') === 'Осень');
 console.log(getSeason('ноябрь') === 'Осень');
-console.log(getSeason('Блабла'));
+console.log(getSeason('Блабла') === 'Такого месяца не существует');
