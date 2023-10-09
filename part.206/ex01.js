@@ -55,48 +55,34 @@ const getSeason = (month) => {
 
   switch (tempMonth) {
     case 'январь':
-      result = 'Зима';
-      break;
     case 'февраль':
-      result = 'Зима';
-      break;
     case 'декабрь':
       result = 'Зима';
       break;
 
     case 'март':
-      result = 'Весна';
-      break;
     case 'апрель':
-      result = 'Весна';
-      break;
     case 'май':
       result = 'Весна';
       break;
 
     case 'июнь':
-      result = 'Лето';
-      break;
     case 'июль':
-      result = 'Лето';
-      break;
     case 'август':
       result = 'Лето';
       break;
 
     case 'сентябрь':
-      result = 'Осень';
-      break;
     case 'октябрь':
-      result = 'Осень';
-      break;
     case 'ноябрь':
       result = 'Осень';
       break;
 
-    // default:
-    //   break;
+    default:
+      result = 'Такого месяца не существует';
+      break;
   }
+
   return result;
 }
 
@@ -117,3 +103,4 @@ console.log(getSeason('август') === 'Лето');
 console.log(getSeason('сентябрь') === 'Осень');
 console.log(getSeason('октябрь') === 'Осень');
 console.log(getSeason('ноябрь') === 'Осень');
+console.log(getSeason('Блабла'));
