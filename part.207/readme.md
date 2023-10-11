@@ -247,6 +247,51 @@ const forStringBuilder = (symbol, quantity) => {
   return result;
 }
 ```
+
+### Пример перевода числа из 10-й системы счисления в любую
+
+Без строк. Не работает, для четных чисел
+
+```js
+const decToBin = (n, h = 2) => {
+  let res = 0;
+  let p = n;
+
+  while (p !== 0) {
+    let q = p % h;
+    p = Math.floor(p / h);
+    res = res * 10 + q;
+  }
+
+  let bin = 0;
+
+  while (res !== 0) {
+    let q = res % 10;
+    res = Math.floor(res / 10);
+    bin = bin * 10 + q;
+  }
+
+  return bin;
+}
+```
+Со строками
+
+```js
+const decTo = (n, h = 2) => {
+  let res = '';
+  let p = n;
+
+  while (p !== 0) {
+    let q = p % h;
+    p = Math.floor(p / h);
+    if (h >= 11) res = `(${q})` + res;
+    else res = `${q}` + res;
+  }
+
+  return res;
+}
+```
+
 ### Замечания
 
 - можно использовать сложные условия;
