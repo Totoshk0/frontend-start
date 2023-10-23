@@ -220,7 +220,7 @@ bash-3.2$ clear
 
 Теперь клонировать репозитории можно при помощи `git@github.com:ikser...`
 
-![](image-7.png)
+![](./img/image-7.png)
 
 Попробуйте
 
