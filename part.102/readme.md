@@ -134,7 +134,7 @@ git@github.com: Permission denied (publickey).
 bash-3.2$ cd ~/.ssh
 bash-3.2$ .ssh > rm *
 bash-3.2$: sure you want to delete all 4 files in /Users/i/.ssh [yn]? y
-bash-3.2$: 
+bash-3.2$:
 ```
 3. Выполнить команду `ssh-keygen`, при необходимости несколько раз нажать клавишу Enter/Return
 ```bash
@@ -194,7 +194,7 @@ rdJ7lx30i0sZ3qfj4X9tYf7xqZ0FZ6eL9ewiM2JIChFw5Dr73wywRfk= i@ksergey
  - Key type оставить без изменения
  - в коле Key вставить текст, полученный на последнем шаге подготовки
  - нажать кнопку `Add SSH key`
- 
+
 - ![](./img/image-6.png)
 
 7. Вернуться к bash и прописать `ssh -T git@github.com` в ответ должно быть приветствие с указанием никнейма вашего аккаунта
@@ -215,4 +215,27 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
 Hi ksergey! You've successfully authenticated, but GitHub does not provide shell access.
 bash-3.2$ clear
+```
+# Готово
+
+Теперь клонировать репозитории можно при помощи `git@github.com:ikser...`
+
+![](image-7.png)
+
+Попробуйте
+
+```bash
+git clone git@github.com:iksergey/frontend-start.git
+```
+В случае правильной настройки ssh всё должно получиться
+
+```bash
+trash.1000 > git clone git@github.com:iksergey/frontend-start.git
+Cloning into 'frontend-start'...
+remote: Enumerating objects: 661, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 661 (delta 4), reused 13 (delta 1), pack-reused 641
+Receiving objects: 100% (661/661), 56.33 MiB | 4.45 MiB/s, done.
+Resolving deltas: 100% (226/226), done.
 ```
