@@ -5,7 +5,9 @@
 Перейдите к папке `C:\Users\<Имя учётной записи>\.ssh` если она существует - удалите всё её содержимое (можно и саму папку)
 
 1. Открыть Windows PowerShell
+
 ![Windows PowerShell](./img/image-1.png)
+
 2. Прописать `git --version`
   - Если в ответ показана версия `git version 2.39.3` - значит git установлен.
   - Если в ответ, что-то похожее:
@@ -51,7 +53,6 @@ At line:1 char:1
 Administrator@vdswin2k22 MINGW64 ~
 $ git --version
 git version 2.42.0.windows.2
-
 ```
 
 5. Прописать `ssh -T git@github.com`.
@@ -75,7 +76,6 @@ This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
 git@github.com: Permission denied (publickey).
-
 ```
 Это означает, что никакого ssh-ключа в системе не найдено.
 
@@ -126,34 +126,86 @@ git@github.com: Permission denied (publickey).
 *Можно при помощи терминала: `cd C:\Users\<Имя учётной записи>\.ssh` и затем выполнить `vim id_rsa.pub` или `cat id_rsa.pub` или `notepad id_rsa.pub`*
 Переходите к части "Установка SSH ключа на github.com"
 
-## *Nix
-
+## 1.1 Подготовка. *Nix
+1. В `Terminal` | `Bash` прописать `cd ~/.ssh`. Если такой папки нет - перейти к шагу 3.
+2. Выполнить команду `rm *` для удаления всего содержимого папки `.ssh` и при необходимости подтвердить действие:
+```bash
+bash-3.2$ cd ~/.ssh
+bash-3.2$ .ssh > rm *
+bash-3.2$: sure you want to delete all 4 files in /Users/i/.ssh [yn]? y
+```
+3. Выполнить команду `ssh-keygen` при необходимости несколько раз нажать клавишу Enter/Return
+```bash
+bash-3.2$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/i/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/i/.ssh/id_rsa
+Your public key has been saved in /Users/i/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:cuYCzycjsBBwhAzZNYR6JqdKESF433IdgJnHdjDKYxE i@ksergeyru.local
+The key's randomart image is:
++---[RSA 3072]----+
+|B*++E*+o         |
+|*++.+++.o        |
+|.o..=+ o .       |
+|oo+.o.o .        |
+|.*o .o. S        |
+|.o o + =         |
+|o . . * o        |
+|.    . =         |
+|                 |
++----[SHA256]-----+
+bash-3.2$
+```
+4. Выполнить команду `cat ~/.ssh/id_rsa.pub` для открытия публичного ssh-ключа.
+5. Скопировать полученное содержимое
+```bash
+bash-3.2$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i0sZ3qfj4VyfLrdJ7lx30i0sZ3qfj4X9tYzaC1yc2EAAAADAQABAAABgQCuVwDoQYk0uy/+3R7WGDVyGDVyfLrdJ7lx30i0sZ3qfj4/+3R7W50X9tYf7GDVyfLrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i0sZ3qfj4VyfLrdJ7lx30i0sZ3qfj4X9tYf7xqZ0FZ6eL9ewiM2JIChFw5Dr73wywRfk= i@ksergey
+```
 
 # Установка SSH ключа на github.com
 
 1. Перейти на сайт [github.com/](https://github.com/)
 2. Войти в свой аккаунт `Sign in`
 3. В верхней правой части страницы, кликнуть по значку своего профиля и перейти к настройкам
-- ![Alt text](./img/image-2.png)
-- ![Alt text](./img/image-3.png)
+- ![](./img/image-2.png)
+- ![](./img/image-3.png)
 
 4. Слева в меню выбрать `SSH and GPG keys`
-![Alt text](./img/image-4.png)
+
+- ![](./img/image-4.png)
 
 5. Нажать `New SSH key`
-![Alt text](./img/image-5.png)
+
+- ![](./img/image-5.png)
 
 6. На открывшейся странице
  - добавить какое-то описание в поле Title
  - Key type оставить без изменения
  - в коле Key вставить текст, полученный на последнем шаге подготовки
 
-![Alt text](./img/image-6.png)
+- ![](./img/image-6.png)
 
 7. Вернуться к bash и прописать `ssh -T git@github.com` в ответ должно быть приветствие с указанием никнейма вашего аккаунта
 ```bash
 Administrator@vdswin2k22 MINGW64 ~/.ssh
 $ ssh -T git@github.com
-Hi iksergey! You've successfully authenticated, but GitHub does not provide shell access.
+Hi ksergey! You've successfully authenticated, but GitHub does not provide shell access.
 
+```
+
+возможно придётся ввести подтверждение
+
+```bash
+bash-3.2$ ssh -T git@github.com
+The authenticity of host 'github.com (10.11.12.13)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi ksergey! You've successfully authenticated, but GitHub does not provide shell access.
+bash-3.2$ clear
 ```
