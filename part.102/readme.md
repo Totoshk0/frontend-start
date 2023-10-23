@@ -9,7 +9,7 @@
 ![Windows PowerShell](./img/image-1.png)
 
 2. Прописать `git --version`
-  - Если в ответ показана версия `git version 2.39.3` - значит git установлен.
+  - Если в ответ показана версия `git version 2.39.3` (или иная версия) - значит git установлен.
   - Если в ответ, что-то похожее:
 
 ```powershell
@@ -46,6 +46,7 @@ At line:1 char:1
 Вместе с git, как правило, устанавливается оболочка `Bash`.
 
 3. В меню "пуск" нужно найти `Git Bash` и запустить.
+
 ![Git Bash](./img/image.png)
 
 4. Проверить, что `git` установлен
@@ -112,7 +113,7 @@ The key's randomart ./img/image is:
 +----[SHA256]-----+
 ```
 
-7. Прописать в терминале в ответ должно быть что-то такое:
+7. Прописать в терминале `ssh -T git@github.com` в ответ должно быть что-то такое:
 
 ```bash
 Administrator@vdswin2k22 MINGW64 ~
@@ -126,15 +127,16 @@ git@github.com: Permission denied (publickey).
 *Можно при помощи терминала: `cd C:\Users\<Имя учётной записи>\.ssh` и затем выполнить `vim id_rsa.pub` или `cat id_rsa.pub` или `notepad id_rsa.pub`*
 Переходите к части "Установка SSH ключа на github.com"
 
-## 1.1 Подготовка. *Nix
+## 1.2 Подготовка. *Nix
 1. В `Terminal` | `Bash` прописать `cd ~/.ssh`. Если такой папки нет - перейти к шагу 3.
 2. Выполнить команду `rm *` для удаления всего содержимого папки `.ssh` и при необходимости подтвердить действие:
 ```bash
 bash-3.2$ cd ~/.ssh
 bash-3.2$ .ssh > rm *
 bash-3.2$: sure you want to delete all 4 files in /Users/i/.ssh [yn]? y
+bash-3.2$: 
 ```
-3. Выполнить команду `ssh-keygen` при необходимости несколько раз нажать клавишу Enter/Return
+3. Выполнить команду `ssh-keygen`, при необходимости несколько раз нажать клавишу Enter/Return
 ```bash
 bash-3.2$ ssh-keygen
 Generating public/private rsa key pair.
@@ -163,7 +165,12 @@ bash-3.2$
 5. Скопировать полученное содержимое
 ```bash
 bash-3.2$ cat ~/.ssh/id_rsa.pub
-ssh-rsa AAAAB3NrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i0sZ3qfj4VyfLrdJ7lx30i0sZ3qfj4X9tYzaC1yc2EAAAADAQABAAABgQCuVwDoQYk0uy/+3R7WGDVyGDVyfLrdJ7lx30i0sZ3qfj4/+3R7W50X9tYf7GDVyfLrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i0sZ3qfj4VyfLrdJ7lx30i0sZ3qfj4X9tYf7xqZ0FZ6eL9ewiM2JIChFw5Dr73wywRfk= i@ksergey
+ssh-rsa AAAAB3NrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9
+tYf7xqZ0GDVyfLrdJ7lx30i0sZ3qfj4VyfLrdJ7lx30i0sZ3qfj4X9tYzaC1
+yc2EAAAX9tYf7xqZ0GDVyfLrdJ7lx30i0sZ3ADAQABDVyfLrdJ7lx30
+i0sZ3qfj4/+3R7W50X9tYf7GDVyfLrdJ7lx30i0sZ3qfj4rdJ7lx30
+i0sZ3qfj4Z3qfj4AAABgQCuVwDoQYk0uy/+3R7WGDVyGqfj4VyfL
+rdJ7lx30i0sZ3qfj4X9tYf7xqZ0FZ6eL9ewiM2JIChFw5Dr73wywRfk= i@ksergey
 ```
 
 # Установка SSH ключа на github.com
@@ -186,7 +193,8 @@ ssh-rsa AAAAB3NrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i
  - добавить какое-то описание в поле Title
  - Key type оставить без изменения
  - в коле Key вставить текст, полученный на последнем шаге подготовки
-
+ - нажать кнопку `Add SSH key`
+ 
 - ![](./img/image-6.png)
 
 7. Вернуться к bash и прописать `ssh -T git@github.com` в ответ должно быть приветствие с указанием никнейма вашего аккаунта
@@ -194,7 +202,6 @@ ssh-rsa AAAAB3NrdJ7lx30i0sZ3qfj4rdJ7lx30i0sZ3qfj4Z3qfj4X9tYf7xqZ0GDVyfLrdJ7lx30i
 Administrator@vdswin2k22 MINGW64 ~/.ssh
 $ ssh -T git@github.com
 Hi ksergey! You've successfully authenticated, but GitHub does not provide shell access.
-
 ```
 
 возможно придётся ввести подтверждение
