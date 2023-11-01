@@ -8,7 +8,6 @@ const createHoursArray = () => {
 
 const print = (hours) => {
   return `hours: ${hours}`;
-  // console.log(`hours: ${hours}`);
 }
 
 const getUser = () => {
@@ -26,12 +25,6 @@ const getUserList = (count) => {
 }
 
 const printUserList = (userList) => {
-  // for (let i = 0; i < userList.length; i++) {
-  //   console.log(userList[i]);
-  // }
-  // for (const user of userList) {
-  //   console.log(`${user[0]} - ${user[1]}`);
-  // }
   let result = '';
   for (const user of userList) {
     result += `${user[0]} - ${user[1]}\n`;
@@ -44,6 +37,7 @@ const main = () => {
   console.log(print(hours));
   const userList = getUserList(3);
   console.log(printUserList(userList));
+
 }
 
 main();
