@@ -32,12 +32,17 @@ const printUserList = (userList) => {
   return result;
 }
 
+const taskSolution = (timeArray, usersArray) => {
+  const solution = [0, 0];
+
+  return solution;
+}
 const main = () => {
   const hours = createHoursArray();
   console.log(print(hours));
   const userList = getUserList(3);
   console.log(printUserList(userList));
-
+  const solution = taskSolution(hours, userList);
 }
 
 main();
